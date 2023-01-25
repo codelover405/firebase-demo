@@ -1,0 +1,67 @@
+
+.chefs{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   padding: 70px 0px;
+    .heading{
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        h4{
+            padding: 5px 0px;
+        }
+    }
+    .card{
+        border-radius: 10px;
+        transition: all .5s ease;   
+    }
+    .card:hover{
+            transform: translate3D(0,-1px,0) scale(1.03);
+            transition: all .4s ease; 
+    }
+    .member-image{
+        position: relative;
+        background-color: #3bb78f;
+        background-image: linear-gradient(315deg,
+                #3bb78f 0%, #0bab64 74%);
+    }
+    .member-image::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background: url('../../Assets/pictures/wave.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .menber-info{
+        padding: 10px 15px 20px 15px;
+    }
+    .chef-name{
+        font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--color-secondary);
+}
+ .chef-description{
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 15px;
+    line-height: 26px;
+    color: rgba(33, 37, 41, 0.7);
+
+ }   
+    .occupation{
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(33, 37, 41, 0.4);
+    }
+    
+}
